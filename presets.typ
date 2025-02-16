@@ -1,7 +1,9 @@
-
+// Author: Danyel Regalario
+// Forked by: Paolo Rollan
+// Docs: https://typst.app/docs/tutorial/
 
 // presets
-
+// ---------------------------------------------------------
 #let exam(
   course: "",
   exam: "",
@@ -75,6 +77,14 @@ set math.mat(delim: "[")
   content
 ) = {
     set enum(numbering: "i.")
+
+    content
+}
+
+#let itemsI(
+  content
+) = {
+    set enum(numbering: "I.")
 
     content
 }
